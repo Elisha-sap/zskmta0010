@@ -1,0 +1,217 @@
+{
+    "_version": "1.12.0",
+    "sap.app": {
+        "id": "mta0010.ui5Module01",
+        "type": "application",
+        "i18n": "i18n/i18n.properties",
+        "applicationVersion": {
+            "version": "1.0.0"
+        },
+        "title": "{{appTitle}}",
+        "description": "{{appDescription}}",
+        "sourceTemplate": {
+            "id": "html5moduletemplates.basicSAPUI5ApplicationProjectModule",
+            "version": "1.40.12"
+        },
+        "dataSources": {
+            "YY1_C_SUPPLIER_VH_CDS": {
+                "uri": "/sap/opu/odata/sap/YY1_C_SUPPLIER_VH_CDS",
+                "type": "OData"
+            },
+            "YY1_C_PURCHASEORDER_VH_CDS": {
+                "uri": "/sap/opu/odata/sap/YY1_C_PURCHASEORDER_VH_CDS",
+                "type": "OData"
+            },
+            "YY1_C_MATERIALDOCUMENT_VH_CDS": {
+                "uri": "/sap/opu/odata/sap/YY1_C_MATERIALDOCUMENT_VH_CDS",
+                "type": "OData"
+            },
+            "YY1_C_SUPPLIERINVOICE_VH_CDS": {
+                "uri": "/sap/opu/odata/sap/YY1_C_SUPPLIERINVOICE_VH_CDS",
+                "type": "OData"
+            },
+            "YY1_C_PRODUCT_VH_CDS": {
+                "uri": "/sap/opu/odata/sap/YY1_C_PRODUCT_VH_CDS",
+                "type": "OData"
+            },
+            "YY1_C_PAYMENTTERM_VH_CDS": {
+                "uri": "/sap/opu/odata/sap/YY1_C_PAYMENTTERM_VH_CDS",
+                "type": "OData"
+            },
+            "YY1_C_POHISTORYFORIV_CDS": {
+                "uri": "/sap/opu/odata/sap/YY1_C_POHISTORYFORIV_CDS",
+                "type": "OData"
+            },
+            "API_SUPPLIERINVOICE_PROCESS_SRV": {
+                "uri": "/sap/opu/odata/sap/API_SUPPLIERINVOICE_PROCESS_SRV",
+                "type": "OData"
+            }
+        }
+    },
+    "sap.ui": {
+        "technology": "UI5",
+        "icons": {
+            "icon": "",
+            "favIcon": "",
+            "phone": "",
+            "phone@2": "",
+            "tablet": "",
+            "tablet@2": ""
+        },
+        "deviceTypes": {
+            "desktop": true,
+            "tablet": true,
+            "phone": false
+        }
+    },
+    "sap.ui5": {
+        "config": {
+        },
+        "contentDensities": {
+            "compact": true,
+            "cozy": true
+        },
+        "dependencies": {
+            "minUI5Version": "1.65.6",
+            "libs": {
+                "sap.ui.core": {},
+                "sap.m": {},
+                "sap.ui.layout": {}
+            }
+        },
+        "flexEnabled": false,
+        "models": {
+            "i18n": {
+                "type": "sap.ui.model.resource.ResourceModel",
+                "settings": {
+                    "bundleName": "mta0010.ui5Module01.i18n.i18n"
+                }
+            },
+            "f4Vendor": {
+                "type": "sap.ui.model.odata.v2.ODataModel",
+                "dataSource": "YY1_C_SUPPLIER_VH_CDS",
+                "settings": {
+                    "useBatch": true
+                },
+                "preload": true
+            },
+            "f4Purdoc": {
+                "type": "sap.ui.model.odata.v2.ODataModel",
+                "dataSource": "YY1_C_PURCHASEORDER_VH_CDS",
+                "settings": {
+                    "useBatch": true
+                },
+                "preload": true
+            },
+            "f4Matdoc": {
+                "type": "sap.ui.model.odata.v2.ODataModel",
+                "dataSource": "YY1_C_MATERIALDOCUMENT_VH_CDS",
+                "settings": {
+                    "useBatch": true
+                },
+                "preload": true
+            },
+            "f4SupInv": {
+                "type": "sap.ui.model.odata.v2.ODataModel",
+                "dataSource": "YY1_C_SUPPLIERINVOICE_VH_CDS",
+                "settings": {
+                    "useBatch": true
+                },
+                "preload": true
+            },
+            "f4Product": {
+                "type": "sap.ui.model.odata.v2.ODataModel",
+                "dataSource": "YY1_C_PRODUCT_VH_CDS",
+                "settings": {
+                    "useBatch": true
+                },
+                "preload": true
+            },
+            "f4PayTerm": {
+                "type": "sap.ui.model.odata.v2.ODataModel",
+                "dataSource": "YY1_C_PAYMENTTERM_VH_CDS",
+                "settings": {
+                    "useBatch": true
+                },
+                "preload": true
+            },
+            "purchaseHistory": {
+                "type": "sap.ui.model.odata.v2.ODataModel",
+                "dataSource": "YY1_C_POHISTORYFORIV_CDS",
+                "settings": {
+                    "useBatch": true
+                },
+                "preload": true
+            },
+            "apiSupplierInvoice": {
+                "type": "sap.ui.model.odata.v2.ODataModel",
+                "dataSource": "API_SUPPLIERINVOICE_PROCESS_SRV",
+                "settings": {
+                    "useBatch": true
+                },
+                "preload": true
+            }
+        },
+        "resources": {
+            "css": [
+                {
+                    "uri": "css/style.css"
+                }
+            ],
+            "js": [
+                {
+                    "uri": "/js/vendor/partial.js"
+                },
+                {
+                    "uri": "/js/vendor/lodash.js"
+                },
+                {
+                    "uri": "/js/vendor/q.js"
+                },
+                {
+                    "uri": "/js/vendor/moment.js"
+                },
+                {
+                    "uri": "/js/vendor/currency.min.js"
+                }
+            ]
+        },
+        "rootView": {
+            "viewName": "mta0010.ui5Module01.view.App",
+            "type": "XML",
+            "async": true,
+            "id": "app"
+        },
+        "routing": {
+            "config": {
+                "routerClass": "sap.m.routing.Router",
+                "viewType": "XML",
+                "async": true,
+                "viewPath": "mta0010.ui5Module01.view",
+                "controlAggregation": "pages",
+                "controlId": "app",
+                "clearControlAggregation": false,
+                "bypassed": {
+                    "target": "notFound"
+                }
+            },
+            "routes": [
+                {
+                    "pattern": "",
+                    "name": "main",
+                    "target": "main"
+                }
+            ],
+            "targets": {
+                "main": {
+                    "viewName": "Main",
+                    "viewLevel": 1
+                },
+                "notFound": {
+                    "viewName": "NotFound",
+                    "viewId": "notFound"
+                }
+            }
+        }
+    }
+}

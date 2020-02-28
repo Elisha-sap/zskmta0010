@@ -1,0 +1,286 @@
+{
+    "d": {
+        "results": [
+            {
+                "__metadata": {
+                    "id": "https://my302950.s4hana.ondemand.com:443/sap/opu/odata/sap/YY1_C_PAYMENTTERM_VH_CDS/YY1_C_PaymentTerm_VH(CustomerPaymentTerms='0006',Language='EN')",
+                    "uri": "https://my302950.s4hana.ondemand.com:443/sap/opu/odata/sap/YY1_C_PAYMENTTERM_VH_CDS/YY1_C_PaymentTerm_VH(CustomerPaymentTerms='0006',Language='EN')",
+                    "type": "YY1_C_PAYMENTTERM_VH_CDS.YY1_C_PaymentTerm_VHType"
+                },
+                "CustomerPaymentTerms": "0006",
+                "Language": "EN",
+                "CustomerPaymentTermsName": "End of Month 4%, Mid-Month 2%"
+            },
+            {
+                "__metadata": {
+                    "id": "https://my302950.s4hana.ondemand.com:443/sap/opu/odata/sap/YY1_C_PAYMENTTERM_VH_CDS/YY1_C_PaymentTerm_VH(CustomerPaymentTerms='0001',Language='EN')",
+                    "uri": "https://my302950.s4hana.ondemand.com:443/sap/opu/odata/sap/YY1_C_PAYMENTTERM_VH_CDS/YY1_C_PaymentTerm_VH(CustomerPaymentTerms='0001',Language='EN')",
+                    "type": "YY1_C_PAYMENTTERM_VH_CDS.YY1_C_PaymentTerm_VHType"
+                },
+                "CustomerPaymentTerms": "0001",
+                "Language": "EN",
+                "CustomerPaymentTermsName": "Pay Immediately w/o Deduction"
+            },
+            {
+                "__metadata": {
+                    "id": "https://my302950.s4hana.ondemand.com:443/sap/opu/odata/sap/YY1_C_PAYMENTTERM_VH_CDS/YY1_C_PaymentTerm_VH(CustomerPaymentTerms='NT08',Language='EN')",
+                    "uri": "https://my302950.s4hana.ondemand.com:443/sap/opu/odata/sap/YY1_C_PAYMENTTERM_VH_CDS/YY1_C_PaymentTerm_VH(CustomerPaymentTerms='NT08',Language='EN')",
+                    "type": "YY1_C_PAYMENTTERM_VH_CDS.YY1_C_PaymentTerm_VHType"
+                },
+                "CustomerPaymentTerms": "NT08",
+                "Language": "EN",
+                "CustomerPaymentTermsName": "Net Due in 8 Days"
+            },
+            {
+                "__metadata": {
+                    "id": "https://my302950.s4hana.ondemand.com:443/sap/opu/odata/sap/YY1_C_PAYMENTTERM_VH_CDS/YY1_C_PaymentTerm_VH(CustomerPaymentTerms='NT60',Language='EN')",
+                    "uri": "https://my302950.s4hana.ondemand.com:443/sap/opu/odata/sap/YY1_C_PAYMENTTERM_VH_CDS/YY1_C_PaymentTerm_VH(CustomerPaymentTerms='NT60',Language='EN')",
+                    "type": "YY1_C_PAYMENTTERM_VH_CDS.YY1_C_PaymentTerm_VHType"
+                },
+                "CustomerPaymentTerms": "NT60",
+                "Language": "EN",
+                "CustomerPaymentTermsName": "Net Due in 60 Days"
+            },
+            {
+                "__metadata": {
+                    "id": "https://my302950.s4hana.ondemand.com:443/sap/opu/odata/sap/YY1_C_PAYMENTTERM_VH_CDS/YY1_C_PaymentTerm_VH(CustomerPaymentTerms='NT15',Language='EN')",
+                    "uri": "https://my302950.s4hana.ondemand.com:443/sap/opu/odata/sap/YY1_C_PAYMENTTERM_VH_CDS/YY1_C_PaymentTerm_VH(CustomerPaymentTerms='NT15',Language='EN')",
+                    "type": "YY1_C_PAYMENTTERM_VH_CDS.YY1_C_PaymentTerm_VHType"
+                },
+                "CustomerPaymentTerms": "NT15",
+                "Language": "EN",
+                "CustomerPaymentTermsName": "Net Due in 15 Days"
+            },
+            {
+                "__metadata": {
+                    "id": "https://my302950.s4hana.ondemand.com:443/sap/opu/odata/sap/YY1_C_PAYMENTTERM_VH_CDS/YY1_C_PaymentTerm_VH(CustomerPaymentTerms='0009',Language='EN')",
+                    "uri": "https://my302950.s4hana.ondemand.com:443/sap/opu/odata/sap/YY1_C_PAYMENTTERM_VH_CDS/YY1_C_PaymentTerm_VH(CustomerPaymentTerms='0009',Language='EN')",
+                    "type": "YY1_C_PAYMENTTERM_VH_CDS.YY1_C_PaymentTerm_VHType"
+                },
+                "CustomerPaymentTerms": "0009",
+                "Language": "EN",
+                "CustomerPaymentTermsName": "Payable in 3 Installments"
+            },
+            {
+                "__metadata": {
+                    "id": "https://my302950.s4hana.ondemand.com:443/sap/opu/odata/sap/YY1_C_PAYMENTTERM_VH_CDS/YY1_C_PaymentTerm_VH(CustomerPaymentTerms='0002',Language='EN')",
+                    "uri": "https://my302950.s4hana.ondemand.com:443/sap/opu/odata/sap/YY1_C_PAYMENTTERM_VH_CDS/YY1_C_PaymentTerm_VH(CustomerPaymentTerms='0002',Language='EN')",
+                    "type": "YY1_C_PAYMENTTERM_VH_CDS.YY1_C_PaymentTerm_VHType"
+                },
+                "CustomerPaymentTerms": "0002",
+                "Language": "EN",
+                "CustomerPaymentTermsName": "14 Days 2%, 30 Net"
+            },
+            {
+                "__metadata": {
+                    "id": "https://my302950.s4hana.ondemand.com:443/sap/opu/odata/sap/YY1_C_PAYMENTTERM_VH_CDS/YY1_C_PaymentTerm_VH(CustomerPaymentTerms='0008',Language='EN')",
+                    "uri": "https://my302950.s4hana.ondemand.com:443/sap/opu/odata/sap/YY1_C_PAYMENTTERM_VH_CDS/YY1_C_PaymentTerm_VH(CustomerPaymentTerms='0008',Language='EN')",
+                    "type": "YY1_C_PAYMENTTERM_VH_CDS.YY1_C_PaymentTerm_VHType"
+                },
+                "CustomerPaymentTerms": "0008",
+                "Language": "EN",
+                "CustomerPaymentTermsName": "14 Days 2%, 30/1,5%, 45 Net"
+            },
+            {
+                "__metadata": {
+                    "id": "https://my302950.s4hana.ondemand.com:443/sap/opu/odata/sap/YY1_C_PAYMENTTERM_VH_CDS/YY1_C_PaymentTerm_VH(CustomerPaymentTerms='NT45',Language='EN')",
+                    "uri": "https://my302950.s4hana.ondemand.com:443/sap/opu/odata/sap/YY1_C_PAYMENTTERM_VH_CDS/YY1_C_PaymentTerm_VH(CustomerPaymentTerms='NT45',Language='EN')",
+                    "type": "YY1_C_PAYMENTTERM_VH_CDS.YY1_C_PaymentTerm_VHType"
+                },
+                "CustomerPaymentTerms": "NT45",
+                "Language": "EN",
+                "CustomerPaymentTermsName": "Net Due in 45 Days"
+            },
+            {
+                "__metadata": {
+                    "id": "https://my302950.s4hana.ondemand.com:443/sap/opu/odata/sap/YY1_C_PAYMENTTERM_VH_CDS/YY1_C_PaymentTerm_VH(CustomerPaymentTerms='0003',Language='EN')",
+                    "uri": "https://my302950.s4hana.ondemand.com:443/sap/opu/odata/sap/YY1_C_PAYMENTTERM_VH_CDS/YY1_C_PaymentTerm_VH(CustomerPaymentTerms='0003',Language='EN')",
+                    "type": "YY1_C_PAYMENTTERM_VH_CDS.YY1_C_PaymentTerm_VHType"
+                },
+                "CustomerPaymentTerms": "0003",
+                "Language": "EN",
+                "CustomerPaymentTermsName": "14 Days 3%, 20/2%, 30 Net"
+            },
+            {
+                "__metadata": {
+                    "id": "https://my302950.s4hana.ondemand.com:443/sap/opu/odata/sap/YY1_C_PAYMENTTERM_VH_CDS/YY1_C_PaymentTerm_VH(CustomerPaymentTerms='0005',Language='EN')",
+                    "uri": "https://my302950.s4hana.ondemand.com:443/sap/opu/odata/sap/YY1_C_PAYMENTTERM_VH_CDS/YY1_C_PaymentTerm_VH(CustomerPaymentTerms='0005',Language='EN')",
+                    "type": "YY1_C_PAYMENTTERM_VH_CDS.YY1_C_PaymentTerm_VHType"
+                },
+                "CustomerPaymentTerms": "0005",
+                "Language": "EN",
+                "CustomerPaymentTermsName": "From the 10th of Subs. Month"
+            },
+            {
+                "__metadata": {
+                    "id": "https://my302950.s4hana.ondemand.com:443/sap/opu/odata/sap/YY1_C_PAYMENTTERM_VH_CDS/YY1_C_PaymentTerm_VH(CustomerPaymentTerms='0007',Language='EN')",
+                    "uri": "https://my302950.s4hana.ondemand.com:443/sap/opu/odata/sap/YY1_C_PAYMENTTERM_VH_CDS/YY1_C_PaymentTerm_VH(CustomerPaymentTerms='0007',Language='EN')",
+                    "type": "YY1_C_PAYMENTTERM_VH_CDS.YY1_C_PaymentTerm_VHType"
+                },
+                "CustomerPaymentTerms": "0007",
+                "Language": "EN",
+                "CustomerPaymentTermsName": "15th/31st Subs. Month 2%, ..."
+            },
+            {
+                "__metadata": {
+                    "id": "https://my302950.s4hana.ondemand.com:443/sap/opu/odata/sap/YY1_C_PAYMENTTERM_VH_CDS/YY1_C_PaymentTerm_VH(CustomerPaymentTerms='NT30',Language='EN')",
+                    "uri": "https://my302950.s4hana.ondemand.com:443/sap/opu/odata/sap/YY1_C_PAYMENTTERM_VH_CDS/YY1_C_PaymentTerm_VH(CustomerPaymentTerms='NT30',Language='EN')",
+                    "type": "YY1_C_PAYMENTTERM_VH_CDS.YY1_C_PaymentTerm_VHType"
+                },
+                "CustomerPaymentTerms": "NT30",
+                "Language": "EN",
+                "CustomerPaymentTermsName": "Net Due in 30 Days"
+            },
+            {
+                "__metadata": {
+                    "id": "https://my302950.s4hana.ondemand.com:443/sap/opu/odata/sap/YY1_C_PAYMENTTERM_VH_CDS/YY1_C_PaymentTerm_VH(CustomerPaymentTerms='NT00',Language='EN')",
+                    "uri": "https://my302950.s4hana.ondemand.com:443/sap/opu/odata/sap/YY1_C_PAYMENTTERM_VH_CDS/YY1_C_PaymentTerm_VH(CustomerPaymentTerms='NT00',Language='EN')",
+                    "type": "YY1_C_PAYMENTTERM_VH_CDS.YY1_C_PaymentTerm_VHType"
+                },
+                "CustomerPaymentTerms": "NT00",
+                "Language": "EN",
+                "CustomerPaymentTermsName": "Payable upon Receipt"
+            },
+            {
+                "__metadata": {
+                    "id": "https://my302950.s4hana.ondemand.com:443/sap/opu/odata/sap/YY1_C_PAYMENTTERM_VH_CDS/YY1_C_PaymentTerm_VH(CustomerPaymentTerms='0004',Language='EN')",
+                    "uri": "https://my302950.s4hana.ondemand.com:443/sap/opu/odata/sap/YY1_C_PAYMENTTERM_VH_CDS/YY1_C_PaymentTerm_VH(CustomerPaymentTerms='0004',Language='EN')",
+                    "type": "YY1_C_PAYMENTTERM_VH_CDS.YY1_C_PaymentTerm_VHType"
+                },
+                "CustomerPaymentTerms": "0004",
+                "Language": "EN",
+                "CustomerPaymentTermsName": "As of End of Month"
+            },
+            {
+                "__metadata": {
+                    "id": "https://my302950.s4hana.ondemand.com:443/sap/opu/odata/sap/YY1_C_PAYMENTTERM_VH_CDS/YY1_C_PaymentTerm_VH(CustomerPaymentTerms='C003',Language='EN')",
+                    "uri": "https://my302950.s4hana.ondemand.com:443/sap/opu/odata/sap/YY1_C_PAYMENTTERM_VH_CDS/YY1_C_PaymentTerm_VH(CustomerPaymentTerms='C003',Language='EN')",
+                    "type": "YY1_C_PAYMENTTERM_VH_CDS.YY1_C_PaymentTerm_VHType"
+                },
+                "CustomerPaymentTerms": "C003",
+                "Language": "EN",
+                "CustomerPaymentTermsName": ""
+            },
+            {
+                "__metadata": {
+                    "id": "https://my302950.s4hana.ondemand.com:443/sap/opu/odata/sap/YY1_C_PAYMENTTERM_VH_CDS/YY1_C_PaymentTerm_VH(CustomerPaymentTerms='C001',Language='EN')",
+                    "uri": "https://my302950.s4hana.ondemand.com:443/sap/opu/odata/sap/YY1_C_PAYMENTTERM_VH_CDS/YY1_C_PaymentTerm_VH(CustomerPaymentTerms='C001',Language='EN')",
+                    "type": "YY1_C_PAYMENTTERM_VH_CDS.YY1_C_PaymentTerm_VHType"
+                },
+                "CustomerPaymentTerms": "C001",
+                "Language": "EN",
+                "CustomerPaymentTermsName": ""
+            },
+            {
+                "__metadata": {
+                    "id": "https://my302950.s4hana.ondemand.com:443/sap/opu/odata/sap/YY1_C_PAYMENTTERM_VH_CDS/YY1_C_PaymentTerm_VH(CustomerPaymentTerms='C002',Language='EN')",
+                    "uri": "https://my302950.s4hana.ondemand.com:443/sap/opu/odata/sap/YY1_C_PAYMENTTERM_VH_CDS/YY1_C_PaymentTerm_VH(CustomerPaymentTerms='C002',Language='EN')",
+                    "type": "YY1_C_PAYMENTTERM_VH_CDS.YY1_C_PaymentTerm_VHType"
+                },
+                "CustomerPaymentTerms": "C002",
+                "Language": "EN",
+                "CustomerPaymentTermsName": ""
+            },
+            {
+                "__metadata": {
+                    "id": "https://my302950.s4hana.ondemand.com:443/sap/opu/odata/sap/YY1_C_PAYMENTTERM_VH_CDS/YY1_C_PaymentTerm_VH(CustomerPaymentTerms='C006',Language='EN')",
+                    "uri": "https://my302950.s4hana.ondemand.com:443/sap/opu/odata/sap/YY1_C_PAYMENTTERM_VH_CDS/YY1_C_PaymentTerm_VH(CustomerPaymentTerms='C006',Language='EN')",
+                    "type": "YY1_C_PAYMENTTERM_VH_CDS.YY1_C_PaymentTerm_VHType"
+                },
+                "CustomerPaymentTerms": "C006",
+                "Language": "EN",
+                "CustomerPaymentTermsName": ""
+            },
+            {
+                "__metadata": {
+                    "id": "https://my302950.s4hana.ondemand.com:443/sap/opu/odata/sap/YY1_C_PAYMENTTERM_VH_CDS/YY1_C_PaymentTerm_VH(CustomerPaymentTerms='C004',Language='EN')",
+                    "uri": "https://my302950.s4hana.ondemand.com:443/sap/opu/odata/sap/YY1_C_PAYMENTTERM_VH_CDS/YY1_C_PaymentTerm_VH(CustomerPaymentTerms='C004',Language='EN')",
+                    "type": "YY1_C_PAYMENTTERM_VH_CDS.YY1_C_PaymentTerm_VHType"
+                },
+                "CustomerPaymentTerms": "C004",
+                "Language": "EN",
+                "CustomerPaymentTermsName": ""
+            },
+            {
+                "__metadata": {
+                    "id": "https://my302950.s4hana.ondemand.com:443/sap/opu/odata/sap/YY1_C_PAYMENTTERM_VH_CDS/YY1_C_PaymentTerm_VH(CustomerPaymentTerms='C005',Language='EN')",
+                    "uri": "https://my302950.s4hana.ondemand.com:443/sap/opu/odata/sap/YY1_C_PAYMENTTERM_VH_CDS/YY1_C_PaymentTerm_VH(CustomerPaymentTerms='C005',Language='EN')",
+                    "type": "YY1_C_PAYMENTTERM_VH_CDS.YY1_C_PaymentTerm_VHType"
+                },
+                "CustomerPaymentTerms": "C005",
+                "Language": "EN",
+                "CustomerPaymentTermsName": ""
+            },
+            {
+                "__metadata": {
+                    "id": "https://my302950.s4hana.ondemand.com:443/sap/opu/odata/sap/YY1_C_PAYMENTTERM_VH_CDS/YY1_C_PaymentTerm_VH(CustomerPaymentTerms='V003',Language='EN')",
+                    "uri": "https://my302950.s4hana.ondemand.com:443/sap/opu/odata/sap/YY1_C_PAYMENTTERM_VH_CDS/YY1_C_PaymentTerm_VH(CustomerPaymentTerms='V003',Language='EN')",
+                    "type": "YY1_C_PAYMENTTERM_VH_CDS.YY1_C_PaymentTerm_VHType"
+                },
+                "CustomerPaymentTerms": "V003",
+                "Language": "EN",
+                "CustomerPaymentTermsName": ""
+            },
+            {
+                "__metadata": {
+                    "id": "https://my302950.s4hana.ondemand.com:443/sap/opu/odata/sap/YY1_C_PAYMENTTERM_VH_CDS/YY1_C_PaymentTerm_VH(CustomerPaymentTerms='V001',Language='EN')",
+                    "uri": "https://my302950.s4hana.ondemand.com:443/sap/opu/odata/sap/YY1_C_PAYMENTTERM_VH_CDS/YY1_C_PaymentTerm_VH(CustomerPaymentTerms='V001',Language='EN')",
+                    "type": "YY1_C_PAYMENTTERM_VH_CDS.YY1_C_PaymentTerm_VHType"
+                },
+                "CustomerPaymentTerms": "V001",
+                "Language": "EN",
+                "CustomerPaymentTermsName": ""
+            },
+            {
+                "__metadata": {
+                    "id": "https://my302950.s4hana.ondemand.com:443/sap/opu/odata/sap/YY1_C_PAYMENTTERM_VH_CDS/YY1_C_PaymentTerm_VH(CustomerPaymentTerms='V002',Language='EN')",
+                    "uri": "https://my302950.s4hana.ondemand.com:443/sap/opu/odata/sap/YY1_C_PAYMENTTERM_VH_CDS/YY1_C_PaymentTerm_VH(CustomerPaymentTerms='V002',Language='EN')",
+                    "type": "YY1_C_PAYMENTTERM_VH_CDS.YY1_C_PaymentTerm_VHType"
+                },
+                "CustomerPaymentTerms": "V002",
+                "Language": "EN",
+                "CustomerPaymentTermsName": ""
+            },
+            {
+                "__metadata": {
+                    "id": "https://my302950.s4hana.ondemand.com:443/sap/opu/odata/sap/YY1_C_PAYMENTTERM_VH_CDS/YY1_C_PaymentTerm_VH(CustomerPaymentTerms='V006',Language='EN')",
+                    "uri": "https://my302950.s4hana.ondemand.com:443/sap/opu/odata/sap/YY1_C_PAYMENTTERM_VH_CDS/YY1_C_PaymentTerm_VH(CustomerPaymentTerms='V006',Language='EN')",
+                    "type": "YY1_C_PAYMENTTERM_VH_CDS.YY1_C_PaymentTerm_VHType"
+                },
+                "CustomerPaymentTerms": "V006",
+                "Language": "EN",
+                "CustomerPaymentTermsName": ""
+            },
+            {
+                "__metadata": {
+                    "id": "https://my302950.s4hana.ondemand.com:443/sap/opu/odata/sap/YY1_C_PAYMENTTERM_VH_CDS/YY1_C_PaymentTerm_VH(CustomerPaymentTerms='V004',Language='EN')",
+                    "uri": "https://my302950.s4hana.ondemand.com:443/sap/opu/odata/sap/YY1_C_PAYMENTTERM_VH_CDS/YY1_C_PaymentTerm_VH(CustomerPaymentTerms='V004',Language='EN')",
+                    "type": "YY1_C_PAYMENTTERM_VH_CDS.YY1_C_PaymentTerm_VHType"
+                },
+                "CustomerPaymentTerms": "V004",
+                "Language": "EN",
+                "CustomerPaymentTermsName": ""
+            },
+            {
+                "__metadata": {
+                    "id": "https://my302950.s4hana.ondemand.com:443/sap/opu/odata/sap/YY1_C_PAYMENTTERM_VH_CDS/YY1_C_PaymentTerm_VH(CustomerPaymentTerms='V005',Language='EN')",
+                    "uri": "https://my302950.s4hana.ondemand.com:443/sap/opu/odata/sap/YY1_C_PAYMENTTERM_VH_CDS/YY1_C_PaymentTerm_VH(CustomerPaymentTerms='V005',Language='EN')",
+                    "type": "YY1_C_PAYMENTTERM_VH_CDS.YY1_C_PaymentTerm_VHType"
+                },
+                "CustomerPaymentTerms": "V005",
+                "Language": "EN",
+                "CustomerPaymentTermsName": ""
+            },
+            {
+                "__metadata": {
+                    "id": "https://my302950.s4hana.ondemand.com:443/sap/opu/odata/sap/YY1_C_PAYMENTTERM_VH_CDS/YY1_C_PaymentTerm_VH(CustomerPaymentTerms='C000',Language='EN')",
+                    "uri": "https://my302950.s4hana.ondemand.com:443/sap/opu/odata/sap/YY1_C_PAYMENTTERM_VH_CDS/YY1_C_PaymentTerm_VH(CustomerPaymentTerms='C000',Language='EN')",
+                    "type": "YY1_C_PAYMENTTERM_VH_CDS.YY1_C_PaymentTerm_VHType"
+                },
+                "CustomerPaymentTerms": "C000",
+                "Language": "EN",
+                "CustomerPaymentTermsName": ""
+            }
+        ]
+    }
+}

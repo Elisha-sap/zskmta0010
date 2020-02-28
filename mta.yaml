@@ -1,0 +1,57 @@
+ID: zskmta0010
+_schema-version: '2.1'
+description: One Click Invoice
+parameters:
+  deploy_mode: html5-repo
+version: 0.0.1
+modules:
+  - name: zskmta0010_appRouter
+    type: approuter.nodejs
+    path: zskmta0010_appRouter
+    parameters:
+      disk-quota: 256M
+      memory: 256M
+    requires:
+      - name: siltron_html_repo_runtime
+      - name: zskmta0010_uaa
+      - name: siltron_dest
+  - name: zskmta0010_ui_deployer
+    type: com.sap.html5.application-content
+    path: zskmta0010_ui_deployer
+    requires:
+      - name: siltron_html_repo
+    build-parameters:
+      requires:
+        - name: ui5Module01
+          artifacts:
+            - './*'
+          target-path: resources/ui5Module01
+  - name: ui5Module01
+    type: html5
+    path: ui5Module01
+    build-parameters:
+      builder: grunt
+      supported-platforms: []
+      build-result: dist
+resources:
+  - name: siltron_html_repo_runtime
+    parameters:
+      service-plan: app-runtime
+      service: html5-apps-repo
+    type: org.cloudfoundry.managed-service
+  - name: siltron_html_repo
+    parameters:
+      service-plan: app-host
+      service: html5-apps-repo
+    type: org.cloudfoundry.managed-service
+  - name: zskmta0010_uaa
+    parameters:
+      path: ./xs-security.json
+      service-plan: application
+      service: xsuaa
+    type: org.cloudfoundry.managed-service
+  - name: siltron_dest
+    parameters:
+      service-plan: lite
+      service: destination
+    type: org.cloudfoundry.managed-service

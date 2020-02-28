@@ -1,0 +1,47 @@
+<core:FragmentDefinition xmlns="sap.m" xmlns:core="sap.ui.core" xmlns:app="http://schemas.sap.com/sapui5/extension/sap.ui.core.CustomData/1">
+	<TableSelectDialog title="{i18n>f4_F4HelpPO}" class="sapUiPopupWithPadding" multiSelect="true" items="{f4Purdoc>/YY1_C_PurchaseOrder_VH}"
+		search="onF4Exec" confirm="onF4Exec" cancel="onF4Exec">
+		<columns>
+			<Column width="8em">
+				<header>
+					<Text text="{i18n>f4_purdoc_col01}"/>
+				</header>
+			</Column>
+			<Column width="4em" minScreenWidth="Tablet" demandPopin="true">
+				<header>
+					<Text text="{i18n>f4_purdoc_col02}"/>
+				</header>
+			</Column>
+			<Column minScreenWidth="Desktop" demandPopin="true">
+				<header>
+					<Text text="{i18n>f4_purdoc_col03}"/>
+				</header>
+			</Column>
+			<Column minScreenWidth="Desktop" demandPopin="true" hAlign="Center">
+				<header>
+					<Text text="{i18n>f4_purdoc_col04}"/>
+				</header>
+			</Column>
+			<Column minScreenWidth="Desktop" demandPopin="true" hAlign="Center">
+				<header>
+					<Text text="{i18n>f4_purdoc_col05}"/>
+				</header>
+			</Column>
+			<Column hAlign="End">
+				<header>
+					<Text text="{i18n>f4_purdoc_col06}"/>
+				</header>
+			</Column>
+		</columns>
+		<ColumnListItem>
+			<cells>
+				<ObjectIdentifier title="{f4Purdoc>PurchaseOrder}" text="{f4Purdoc>PurchasingOrganization}"/>
+				<Text text="{f4Purdoc>PurchaseOrderType}"/>
+				<Text text="{ path: 'f4Purdoc>PurchaseOrderDate', type: 'sap.ui.model.type.Date', formatOptions: { style: 'medium' } }"/>
+				<Text text="{f4Purdoc>PurchasingGroup}"/>
+				<Text text="{f4Purdoc>Supplier}"/>
+				<Text text="{f4Purdoc>CreatedByUser}"/>
+			</cells>
+		</ColumnListItem>
+	</TableSelectDialog>
+</core:FragmentDefinition>

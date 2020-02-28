@@ -1,0 +1,15 @@
+<mvc:View
+        controllerName="mta0010.ui5Module01.controller.NotFound"
+        xmlns:mvc="sap.ui.core.mvc"
+        xmlns="sap.m"
+        xmlns:app="http://schemas.sap.com/sapui5/extension/sap.ui.core.CustomData/1">
+    <MessagePage
+            id="common__notFound"
+            title="{i18n>notFoundTitle}"
+            text="{i18n>notFoundText}"
+            icon="{sap-icon://document}">
+        <customDescription>
+            <Link id="link" text="{i18n>backToMaster}" press="myNavBack"/>
+        </customDescription>
+    </MessagePage>
+</mvc:View>

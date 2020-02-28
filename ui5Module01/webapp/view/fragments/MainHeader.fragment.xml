@@ -1,0 +1,100 @@
+<core:FragmentDefinition xmlns="sap.m" xmlns:l="sap.ui.layout" xmlns:f="sap.ui.layout.form" xmlns:core="sap.ui.core"
+	xmlns:app="http://schemas.sap.com/sapui5/extension/sap.ui.core.CustomData/1">
+	<Panel class="sapUiNoContentPadding" backgroundDesign="Transparent">
+		<f:Form id="FormSearchEngine" editable="true" width="100%">
+			<f:layout>
+				<f:ResponsiveGridLayout labelSpanXL="4" labelSpanL="12" labelSpanM="12" labelSpanS="12" adjustLabelSpan="false" emptySpanXL="0"
+					emptySpanL="0" emptySpanM="0" emptySpanS="0" columnsXL="4" columnsL="4" columnsM="2" singleContainerFullSize="true"/>
+			</f:layout>
+			<f:formContainers>
+				<f:FormContainer>
+					<f:FormElement label="{i18n>main_form_col01}">
+						<f:fields>
+							<DateRangeSelection dateValue="{mainView>/PostingDate/fromDate}" secondDateValue="{mainView>/PostingDate/toDate}" displayFormat="yyyy.MM.dd"
+								required="true" id="postingDate"/>
+						</f:fields>
+					</f:FormElement>
+				</f:FormContainer>
+				<f:FormContainer>
+					<f:FormElement label="{i18n>main_form_col02}">
+						<f:fields>
+							<ComboBox id="postingType" required="true" selectedKey="{mainView>/PostingTypeKey}" items="{path: 'mainView>/PostingType', sorter: {path: 'PostingTypeKey'}}">
+								<core:Item text="{mainView>PostingTypeName}" key="{mainView>PostingTypeKey}" />
+							</ComboBox>
+						</f:fields>
+					</f:FormElement>
+				</f:FormContainer>
+				<f:FormContainer>
+					<f:FormElement label="{i18n>main_form_col03}">
+						<f:fields>
+							<ComboBox id="documentStatus" required="true" selectedKey="{mainView>/InvoiceStatusKey}"
+								items="{path: 'mainView>/InvoiceStatus', sorter: {path: 'InvoiceStatusKey'}}" >
+								<core:Item text="{mainView>InvoiceStatusName}" key="{mainView>InvoiceStatusKey}"/>
+							</ComboBox>
+						</f:fields>
+					</f:FormElement>
+				</f:FormContainer>
+				<f:FormContainer>
+					<f:FormElement label="{i18n>main_form_col04}">
+						<f:fields>
+							<MultiInput tokens="{ path: 'mainView>/f4VendorSelected', sorter: { path: 'Supplier' } }" showValueHelp="true" valueHelpRequest="onF4"
+								app:f4File="F4Vendor" app:f4Name="Vendor" tokenUpdate="fcChangeToken">
+								<tokens>
+									<Token key="{mainView>Supplier}" text="{mainView>Supplier}"/>
+								</tokens>
+							</MultiInput>
+						</f:fields>
+					</f:FormElement>
+				</f:FormContainer>
+				<f:FormContainer>
+					<f:FormElement label="{i18n>main_form_col05}">
+						<f:fields>
+							<MultiInput tokens="{ path: 'mainView>/f4POSelected', sorter: { path: 'PurchaseOrder' } }" showValueHelp="true" valueHelpRequest="onF4"
+								app:f4File="F4PurchaseOrder" app:f4Name="PurchaseOrder" tokenUpdate="fcChangeToken">
+								<tokens>
+									<Token key="{mainView>PurchaseOrder}" text="{mainView>PurchaseOrder}"/>
+								</tokens>
+							</MultiInput>
+						</f:fields>
+					</f:FormElement>
+				</f:FormContainer>
+				<f:FormContainer>
+					<f:FormElement label="{i18n>main_form_col06}">
+						<f:fields>
+							<MultiInput tokens="{ path: 'mainView>/f4MatDocSelected', sorter: { path: 'MaterialDocument'} }" showValueHelp="true" valueHelpRequest="onF4"
+								app:f4File="F4MaterialDocument" app:f4Name="MaterialDocument" tokenUpdate="fcChangeToken">
+								<tokens>
+									<Token key="{mainView>MaterialDocument}" text="{mainView>MaterialDocument}"/>
+								</tokens>
+							</MultiInput>
+						</f:fields>
+					</f:FormElement>
+				</f:FormContainer>
+				<f:FormContainer>
+					<f:FormElement label="{i18n>main_form_col07}">
+						<f:fields>
+							<MultiInput tokens="{ path: 'mainView>/f4SuplierInvSelected', sorter: { path: 'SupplierInvoice' } }" showValueHelp="true" valueHelpRequest="onF4"
+								app:f4File="F4SupplierInvoice" app:f4Name="SupplierInvoice" tokenUpdate="fcChangeToken">
+								<tokens>
+									<Token key="{mainView>SupplierInvoice}" text="{mainView>SupplierInvoice}" />
+								</tokens>
+							</MultiInput>
+						</f:fields>
+					</f:FormElement>
+				</f:FormContainer>
+				<f:FormContainer>
+					<f:FormElement label="{i18n>main_form_col08}">
+						<f:fields>
+							<MultiInput tokens="{ path : 'mainView>/f4schProdSelected', sorter: { path: 'Product' } }" showValueHelp="true" valueHelpRequest="onF4"
+								app:f4File="F4Product" app:f4Name="Product" tokenUpdate="fcChangeToken">
+								<tokens>
+									<Token key="{mainView>Product}" text="{mainView>Product} {mainView>ProductName}" />
+								</tokens>
+							</MultiInput>
+						</f:fields>
+					</f:FormElement>
+				</f:FormContainer>
+			</f:formContainers>
+		</f:Form>
+	</Panel>
+</core:FragmentDefinition>

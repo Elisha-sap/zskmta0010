@@ -1,0 +1,39 @@
+<mvc:View id="mainView" height="100%" controllerName="mta0010.ui5Module01.controller.Main" xmlns:core="sap.ui.core"
+          xmlns:u="sap.ui.unified"
+          xmlns:mvc="sap.ui.core.mvc" xmlns="sap.m" xmlns:f="sap.f"
+          xmlns:app="http://schemas.sap.com/sapui5/extension/sap.ui.core.CustomData/1">
+    <f:DynamicPage id="main__dp" busy="{mainView>/busy}" busyIndicatorDelay="0" fitContent="true" headerExpanded="true"
+                   toggleHeaderOnTitleClick="true" showFooter="true">
+        <f:title>
+            <f:DynamicPageTitle>
+                <f:heading>
+                    <Title text="{i18n>main_form_title}"/>
+                </f:heading>
+                <f:actions>
+                    <Button type="Emphasized" text="{i18n>btnSearch}" press="onPAI" app:fcCode="fcSearch"/>
+                </f:actions>
+            </f:DynamicPageTitle>
+        </f:title>
+        <f:header>
+            <f:DynamicPageHeader pinnable="false" class="testcss">
+                <f:content>
+                    <core:Fragment fragmentName="mta0010.ui5Module01.view.fragments.MainHeader" type="XML"/>
+                </f:content>
+            </f:DynamicPageHeader>
+        </f:header>
+        <f:content>
+            <core:Fragment fragmentName="mta0010.ui5Module01.view.fragments.MainContent" type="XML"/>
+        </f:content>
+        <f:footer>
+            <OverflowToolbar>
+                <Button
+                        icon="sap-icon://alert"
+                        text="{= ${message>/}.length }"
+                        visible="{= ${message>/}.length > 0 }"
+                        type="Emphasized"
+                        press="onMessagePopoverPress"/>
+                <ToolbarSpacer/>
+            </OverflowToolbar>
+        </f:footer>
+    </f:DynamicPage>
+</mvc:View>

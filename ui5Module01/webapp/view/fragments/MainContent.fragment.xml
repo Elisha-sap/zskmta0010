@@ -1,0 +1,354 @@
+<core:FragmentDefinition xmlns="sap.m" xmlns:l="sap.ui.layout" xmlns:f="sap.ui.layout.form" xmlns:core="sap.ui.core"
+                         xmlns:t="sap.ui.table"
+                         xmlns:plugins="sap.ui.table.plugins"
+                         xmlns:app="http://schemas.sap.com/sapui5/extension/sap.ui.core.CustomData/1">
+    <Panel backgroundDesign="Transparent" expandable="false" expanded="true" class="sapUiNoContentPadding">
+        <l:HorizontalLayout>
+            <l:VerticalLayout class="sapUiLargeMarginEnd">
+                <!-- Company Code -->
+                <HBox>
+                    <VBox justifyContent="Center">
+                        <Label text="{i18n>main_form_invoice_col01}" class="sapUiTinyMarginEnd" width="125px"
+                               vAlign="Middle"/>
+                    </VBox>
+                    <Input value="{mainView>/InvoiceForm/Company}" enabled="false" class="sapUiLargeMarginEnd"/>
+                </HBox>
+                <HBox>
+                    <VBox justifyContent="Center">
+                        <Label text="{i18n>main_form_invoice_col02}" class="sapUiTinyMarginEnd" width="125px"
+                               vAlign="Middle"/>
+                    </VBox>
+                    <Input value="{mainView>/InvoiceForm/TotalGrossAmount}" enabled="false"
+                           class="sapUiLargeMarginEnd"/>
+                    <Text text="{mainView/InvoiceForm/Currency}" class="sapUiTinyMarginBegin"/>
+                </HBox>
+                <HBox>
+                    <VBox justifyContent="Center">
+                        <Label text="{i18n>main_form_invoice_col03}" class="sapUiTinyMarginEnd" width="125px"
+                               vAlign="Middle"/>
+                    </VBox>
+                    <Input value="{mainView>/InvoiceForm/TotalGRAmount}" enabled="false" class="sapUiLargeMarginEnd"/>
+                    <Text text="{mainView/InvoiceForm/Currency}" class="sapUiTinyMarginBegin"/>
+                </HBox>
+                <HBox>
+                    <VBox justifyContent="Center">
+                        <Label text="{i18n>main_form_invoice_col04}" class="sapUiTinyMarginEnd" width="125px"
+                               vAlign="Middle"/>
+                    </VBox>
+                    <Input value="{mainView>/InvoiceForm/TotalTaxAmount}" enabled="false" class="sapUiLargeMarginEnd"/>
+                    <Text text="{mainView/InvoiceForm/Currency}" class="sapUiTinyMarginBegin"/>
+                </HBox>
+            </l:VerticalLayout>
+            <l:VerticalLayout class="sapUiLargeMarginEnd">
+                <!-- Invoice Date -->
+                <HBox>
+                    <VBox justifyContent="Center">
+                        <Label text="{i18n>main_form_invoice_col05}" class="sapUiLargeMarginEnd" width="100px"
+                               required="true" vAlign="Middle"/>
+                    </VBox>
+                    <DatePicker dateValue="{mainView>/InvoiceForm/InvoicingDate}" displayFormat="yyyy.MM.dd"
+                                width="100%" id="hivDate"/>
+                </HBox>
+                <!-- Posting Date -->
+                <HBox>
+                    <VBox justifyContent="Center">
+                        <Label text="{i18n>main_form_invoice_col06}" class="sapUiLargeMarginEnd" width="100px"
+                               required="true" vAlign="Middle"/>
+                    </VBox>
+                    <DatePicker dateValue="{mainView>/InvoiceForm/PostingDate}" displayFormat="yyyy.MM.dd" width="100%"
+                                id="hpoDate"/>
+                </HBox>
+                <HBox>
+                    <VBox justifyContent="Center">
+                        <Label text="{i18n>main_form_invoice_col11}" class="sapUiLargeMarginEnd" width="100px"
+                               vAlign="Middle"/>
+                    </VBox>
+                    <Input value="{mainView>/InvoiceForm/TaxCode}" enabled="false" class="sapUiLargeMarginEnd"/>
+                </HBox>
+                <HBox>
+                    <VBox justifyContent="Center">
+                        <Label text="{i18n>main_form_invoice_col12}" class="sapUiLargeMarginEnd" width="100px"
+                               vAlign="Middle"/>
+                    </VBox>
+                    <Input value="{mainView>/InvoiceForm/TaxJurisdiction}" enabled="false" class="sapUiLargeMarginEnd"/>
+                </HBox>
+            </l:VerticalLayout>
+            <l:VerticalLayout>
+                <!-- Invoicing Party -->
+                <HBox>
+                    <VBox justifyContent="Center">
+                        <Label text="{i18n>main_form_invoice_col07}" class="sapUiLargeMarginEnd" width="100px"
+                               vAlign="Middle"/>
+                    </VBox>
+                    <Input value="{mainView>/InvoiceForm/InvoicingParty/SupplierName}" class="sapUiLargeMarginEnd"
+                           width="270px" valueHelpOnly="true" showValueHelp="true" valueHelpRequest="onF4"
+                           app:f4File="F4VendorSingle" app:f4Name="VendorSingle"/>
+                </HBox>
+                <!-- Payment Term -->
+                <HBox>
+                    <VBox justifyContent="Center">
+                        <Label text="{i18n>main_form_invoice_col08}" class="sapUiLargeMarginEnd" width="100px"
+                               vAlign="Middle"/>
+                    </VBox>
+                    <Input value="{mainView>/InvoiceForm/PaymentTerm/CustomerPaymentTermsName}"
+                           class="sapUiLargeMarginEnd" width="270px" valueHelpOnly="true" showValueHelp="true"
+                           valueHelpRequest="onF4" app:f4File="F4PaymentTerm" app:f4Name="PaymentTerm"/>
+                </HBox>
+                <!-- Reference -->
+                <HBox>
+                    <VBox justifyContent="Center">
+                        <Label text="{i18n>main_form_invoice_col09}" class="sapUiLargeMarginEnd" width="100px"
+                               vAlign="Middle"/>
+                    </VBox>
+                    <TextArea value="{mainView>/InvoiceForm/Reference}" rows="1" width="150px"
+                              class="sapUiLargeMarginEnd" maxLength="16" id="Reference"/>
+                </HBox>
+                <!-- Text -->
+                <HBox>
+                    <VBox justifyContent="Center">
+                        <Label text="{i18n>main_form_invoice_col10}" class="sapUiLargeMarginEnd" width="100px"
+                               vAlign="Middle"/>
+                    </VBox>
+                    <TextArea value="{mainView>/InvoiceForm/Text}" rows="1" width="270px" class="sapUiLargeMarginEnd"
+                              maxLength="50" id="Text"/>
+                </HBox>
+            </l:VerticalLayout>
+        </l:HorizontalLayout>
+        <t:Table id="SIVReqtable" rows="{mainData>/ResultData}" visibleRowCount="10" columnHeaderHeight="35"
+                 rowHeight="35"
+                 rowSelectionChange="onSelectList" alternateRowColors="true"
+                 fixedColumnCount="1">
+            <t:plugins>
+                <plugins:MultiSelectionPlugin
+                        limit="{path: 'mainView>/TableConfig/limit', type: 'sap.ui.model.type.Integer'}"
+                        enableNotification="true"
+                        showHeaderSelector="{mainView>/TableConfig/showHeaderSelector}"
+                        selectionChange="onPAI" app:fcCode="fcSelectionChange"/>
+            </t:plugins>
+            <t:extension>
+                <OverflowToolbar>
+                    <Title text="{i18n>main_tbl_header01}" width="12rem"/>
+                    <Text text="/ Total : { path: 'mainView>/TableData/Total'} / Select : { path: 'mainView>/TableData/CountSelected'} "/>
+                    <Button icon="sap-icon://open-command-field" type="Transparent" tooltip="{i18n>main_tbl_header02}"
+                            press="onPAI"
+                            visible="{= ${mainView>/TableData/isDetail} === true ? false : true }"
+                            app:fcCode="fcShowDetail"/>
+                    <Button icon="sap-icon://close-command-field" type="Transparent" tooltip="detail-view close"
+                            press="onPAI"
+                            visible="{= ${mainView>/TableData/isDetail} === true ? true : false }"
+                            app:fcCode="fcShowSummary"/>
+                    <ToolbarSpacer/>
+                    <Button text="{i18n>main_tbl_header03}" press="onPAI" app:fcCode="fcCreate" type="Emphasized"
+                            enabled="{mainView>/EnableCreateButton}"/>
+                </OverflowToolbar>
+            </t:extension>
+            <t:rowSettingsTemplate>
+                <t:RowSettings
+                        highlight="{= ${mainData>PurchasingHistoryDocument_IV} === '' ? 'Error' : 'None' }"/>
+            </t:rowSettingsTemplate>
+            <t:columns width="100%" id="columns">
+                <t:Column sortProperty="PurchaseOrder" filterProperty="PurchaseOrder" width="8rem" minWidth="8rem"
+                          hAlign="Center">
+                    <Label text="{i18n>main_tbl_col01}"/>
+                    <t:template>
+                        <Text text="{mainData>PurchaseOrder}"/>
+                    </t:template>
+                </t:Column>
+                <t:Column sortProperty="PurchaseOrderItem" hAlign="Center" visible="{mainView>/TableData/isDetail}"
+                          width="5rem">
+                    <Label text="{i18n>main_tbl_col02}"/>
+                    <t:template>
+                        <Text text="{mainData>PurchaseOrderItem}" width="100%"/>
+                    </t:template>
+                </t:Column>
+                <t:Column sortProperty="Quantity" filterProperty="Quantity" width="5rem">
+                    <Label text="{i18n>main_tbl_col03}" textAlign="End" width="100%"/>
+                    <t:template>
+                        <Text text="{mainData>Quantity}"/>
+                    </t:template>
+                </t:Column>
+                <t:Column sortProperty="PurchaseOrderQuantityUnit" filterProperty="PurchaseOrderQuantityUnit"
+                          hAlign="Center" width="3rem">
+                    <Label text="{i18n>main_tbl_col04}"/>
+                    <t:template>
+                        <Text text="{mainData>PurchaseOrderQuantityUnit}"/>
+                    </t:template>
+                </t:Column>
+                <t:Column sortProperty="PurchaseOrderAmount" filterProperty="PurchaseOrderAmount" width="8rem">
+                    <Label text="{i18n>main_tbl_col05}" textAlign="Center" width="100%"/>
+                    <t:template>
+                        <Text text="{
+							path: 'mainData>PurchaseOrderAmount',
+							type: 'sap.ui.model.type.Float'
+						}" textAlign="End" width="100%"/>
+                    </t:template>
+                </t:Column>
+                <t:Column sortProperty="Currency" filterProperty="Currency" hAlign="Center" width="5rem">
+                    <Label text="{i18n>main_tbl_col06}"/>
+                    <t:template>
+                        <Text text="{mainData>Currency}"/>
+                    </t:template>
+                </t:Column>
+                <t:Column sortProperty="Material" filterProperty="Material" hAlign="Center" width="10rem">
+                    <Label text="{i18n>main_tbl_col07}"/>
+                    <t:template>
+                        <Text text="{mainData>Material}"/>
+                    </t:template>
+                </t:Column>
+                <t:Column sortProperty="PurchaseOrderItemText" filterProperty="PurchaseOrderItemText" minWidth="200rem"
+                          autoResizable="true">
+                    <Label text="{i18n>main_tbl_col08}" textAlign="Center" width="100%"/>
+                    <t:template>
+                        <Text text="{mainData>PurchaseOrderItemText}"/>
+                    </t:template>
+                </t:Column>
+                <t:Column sortProperty="InvoicingParty" filterProperty="InvoicingParty" hAlign="Center" width="8rem">
+                    <Label text="{i18n>main_tbl_col09}"/>
+                    <t:template>
+                        <Text text="{mainData>InvoicingParty}"/>
+                    </t:template>
+                </t:Column>
+                <t:Column sortProperty="InvoicingPartyName" filterProperty="InvoicingPartyName"
+                          visible="{mainView>/TableData/isDetail}" width="12rem">
+                    <Label text="{i18n>main_tbl_col10}" textAlign="Center"/>
+                    <t:template>
+                        <Text text="{mainData>InvoicingPartyName}"/>
+                    </t:template>
+                </t:Column>
+                <t:Column id="supplier" sortProperty="Supplier" filterProperty="Supplier" hAlign="Center"
+                          visible="{mainView>/TableData/isDetail}" width="8rem">
+                    <Label text="{i18n>main_tbl_col11}"/>
+                    <t:template>
+                        <Text text="{mainData>Supplier}"/>
+                    </t:template>
+                </t:Column>
+                <t:Column sortProperty="SupplierName" filterProperty="SupplierName"
+                          visible="{mainView>/TableData/isDetail}" width="10rem">
+                    <Label text="{i18n>main_tbl_col12}" textAlign="Center" width="100%"/>
+                    <t:template>
+                        <Text text="{mainData>SupplierName}"/>
+                    </t:template>
+                </t:Column>
+                <t:Column sortProperty="Plant" filterProperty="Plant" hAlign="Center"
+                          visible="{mainView>/TableData/isDetail}" width="4rem">
+                    <Label text="{i18n>main_tbl_col13}"/>
+                    <t:template>
+                        <Text text="{mainData>Plant}"/>
+                    </t:template>
+                </t:Column>
+                <t:Column sortProperty="StorageLocation" filterProperty="StorageLocation" hAlign="Center"
+                          visible="{mainView>/TableData/isDetail}" width="8rem">
+                    <Label text="{i18n>main_tbl_col14}"/>
+                    <t:template>
+                        <Text text="{mainData>StorageLocation}"/>
+                    </t:template>
+                </t:Column>
+                <t:Column sortProperty="PurchasingHistoryDocumentYear_GR"
+                          filterProperty="PurchasingHistoryDocumentYear_GR" hAlign="Center"
+                          visible="{mainView>/TableData/isDetail}" width="5rem">
+                    <Label text="{i18n>main_tbl_col15}" id="ReqSam"/>
+                    <t:template>
+                        <Text text="{mainData>PurchasingHistoryDocumentYear_GR}"/>
+                    </t:template>
+                </t:Column>
+                <t:Column sortProperty="PurchasingHistoryDocument_GR" filterProperty="PurchasingHistoryDocument_GR"
+                          visible="{mainView>/TableData/isDetail}" width="8rem"
+                          hAlign="Center">
+                    <Label text="{i18n>main_tbl_col16}" width="100%"/>
+                    <t:template>
+                        <Text text="{mainData>PurchasingHistoryDocument_GR}"/>
+                    </t:template>
+                </t:Column>
+                <t:Column sortProperty="PurchasingHistoryDocumentItem_GR"
+                          filterProperty="PurchasingHistoryDocumentItem_GR" visible="{mainView>/TableData/isDetail}"
+                          width="8rem"
+                          hAlign="Center">
+                    <Label text="{i18n>main_tbl_col17}" textAlign="Center" width="100%"/>
+                    <t:template>
+                        <Text text="{mainData>PurchasingHistoryDocumentItem_GR}"/>
+                    </t:template>
+                </t:Column>
+                <t:Column sortProperty="PostingDate_GR" filterProperty="PostingDate_GR" hAlign="Center"
+                          visible="{mainView>/TableData/isDetail}"
+                          width="10rem">
+                    <Label text="{i18n>main_tbl_col32}"/>
+                    <t:template>
+                        <Text text="{
+                            path: 'mainData>PostingDate_GR',
+                            type: 'sap.ui.model.type.Date',
+                            formatOptions: {
+                                style: 'medium'
+                            }
+                        }"/>
+                    </t:template>
+                </t:Column>
+                <t:Column sortProperty="SupplierInvoiceYear" filterProperty="SupplierInvoiceYear" hAlign="Center"
+                          visible="{mainView>/TableData/isDetail}" width="10rem">
+                    <Label text="{i18n>main_tbl_col28}"/>
+                    <t:template>
+                        <Text text="{mainData>PurchasingHistoryDocumentYear_IV}"/>
+                    </t:template>
+                </t:Column>
+                <t:Column sortProperty="ReferenceDocument" filterProperty="ReferenceDocument" hAlign="Center"
+                          width="10rem">
+                    <Label text="{i18n>main_tbl_col29}"/>
+                    <t:template>
+                        <Text text="{mainData>PurchasingHistoryDocument_IV}"/>
+                    </t:template>
+                </t:Column>
+                <t:Column sortProperty="PurchasingHistoryDocumentItem_IV"
+                          filterProperty="PurchasingHistoryDocumentItem_IV" hAlign="Center"
+                          visible="{mainView>/TableData/isDetail}"
+                          width="10rem">
+                    <Label text="{i18n>main_tbl_col30}"/>
+                    <t:template>
+                        <Text text="{mainData>PurchasingHistoryDocumentItem_IV}"/>
+                    </t:template>
+                </t:Column>
+                <t:Column sortProperty="DocumentDate_IV" filterProperty="DocumentDate_IV" hAlign="Center"
+                          visible="{mainView>/TableData/isDetail}"
+                          width="10rem">
+                    <Label text="{i18n>main_tbl_col33}"/>
+                    <t:template>
+                        <Text text="{
+                            path: 'mainData>DocumentDate_IV',
+                            type: 'sap.ui.model.type.Date',
+                            formatOptions: {
+                                style: 'medium'
+                            }
+                        }"/>
+                    </t:template>
+                </t:Column>
+                <t:Column sortProperty="PostingDate_IV" filterProperty="PostingDate_IV" hAlign="Center"
+                          visible="{mainView>/TableData/isDetail}"
+                          width="10rem">
+                    <Label text="{i18n>main_tbl_col33}"/>
+                    <t:template>
+                        <Text text="{
+                            path: 'mainData>PostingDate_IV',
+                            type: 'sap.ui.model.type.Date',
+                            formatOptions: {
+                                style: 'medium'
+                            }
+                        }"/>
+                    </t:template>
+                </t:Column>
+                <t:Column sortProperty="Tax" filterProperty="Tax" hAlign="Center"
+                          visible="{mainView>/TableData/isDetail}"
+                          width="5rem">
+                    <Label text="{i18n>main_tbl_col22}"/>
+                    <t:template>
+                        <Text text="{mainData>TaxCode}"/>
+                    </t:template>
+                </t:Column>
+                <t:Column sortProperty="TaxJurisdiction" filterProperty="TaxJurisdiction"
+                          visible="{mainView>/TableData/isDetail}" width="10rem">
+                    <Label text="{i18n>main_tbl_col23}" textAlign="Center" width="100%"/>
+                    <t:template>
+                        <Text text="{mainData>TaxJurisdiction}"/>
+                    </t:template>
+                </t:Column>
+            </t:columns>
+        </t:Table>
+    </Panel>
+</core:FragmentDefinition>

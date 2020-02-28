@@ -1,0 +1,18 @@
+<core:FragmentDefinition
+  xmlns="sap.m"
+  xmlns:core="sap.ui.core"
+  xmlns:app="http://schemas.sap.com/sapui5/extension/sap.ui.core.CustomData/1">
+  <SelectDialog
+    title="{i18n>f4_F4HelpVendor}"
+    class="sapUiPopupWithPadding"
+    items="{mainData>/SupplierData}"
+    multiSelect="true"
+    search="onF4Exec"
+    liveChange="onF4Exec"
+    confirm="onF4Exec"
+    cancel="onF4Exec">
+    <StandardListItem
+      title="{mainData>Supplier}"
+      info="{mainData>SupplierName}"/>
+  </SelectDialog>
+</core:FragmentDefinition>

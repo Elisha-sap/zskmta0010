@@ -1,0 +1,18 @@
+<core:FragmentDefinition
+  xmlns="sap.m"
+  xmlns:core="sap.ui.core"
+  xmlns:app="http://schemas.sap.com/sapui5/extension/sap.ui.core.CustomData/1">
+  <SelectDialog
+    title="{i18n>f4_F4HelpPaymentTerm}"
+    class="sapUiPopupWithPadding"
+    items="{f4PayTerm>/YY1_C_PaymentTerm_VH}"
+    multiSelect="false"
+    search="onF4Exec"
+    liveChange="onF4Exec"
+    confirm="onF4Exec"
+    cancel="onF4Exec">
+    <StandardListItem
+      title="{f4PayTerm>CustomerPaymentTerms}"
+      info="{f4PayTerm>CustomerPaymentTermsName}"/>
+  </SelectDialog>
+</core:FragmentDefinition>
